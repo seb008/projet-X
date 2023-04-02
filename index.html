@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Création d'une nouvelle affaire</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Création d'une nouvelle affaire</h1>
+
+   
+      <div class="montant_total">
+        <label for="montant_total">Montant total de l'affaire :</label>
+        <input type="text" id="montant_total" name="montant_total"
+        placeholder="00,00 €" 
+        oninput="this.value = this.value.replace(/[^0-9\,]/g, '').replace(/(\,\d{2})\d+?(\,\d{2})?/g, '$1') + ' €';"/>
+        <label for="montant_total_type_de_depense" style="padding: 0px 0px 0px 100px">
+          Montant total type de depense :</label>
+        <input type="number" id="montant_total_type_de_depens" 
+        name="montant_total_type_de_depens" /><br />
+      </div>
+      </div>
+
+      <div class="container">
+        <ul class="titre-mo" id="titre-mo"></ul>
+        <ul class="titre-materiel" id="titre-materiel"></ul>
+      </div>
+
+
+      <div class="select">
+          <label class="type_depense"for="type_depense">Type de dépense :</label>
+          <select class="type_depense_class"id="type_depense" name="type_depense">
+            <option value="">choisir le type de depense</option>
+            <option value="main_d_oeuvre">Main d'oeuvre</option>
+            <option value="materiel">Matériel</option>
+          </select><br />
+      
+          <div class="champs_main_d_oeuvre_class" id="champs_main_d_oeuvre">
+            <label for="titre_tache">Titre de la tâche :</label>
+            <input type="text" id="titre_tache" name="titre_tache" /><br />
+
+            <label for="montant_tache">Montant prévu pour cette tâche :</label>
+            <input type="number" id="montant_tache" name="montant_tache" /><br />
+          </div>
+
+          <div class="champs_materiel_class" id="champs_materiel">
+            <label for="titre_achat">Titre de l'achat :</label>
+            <input type="text" id="titre_achat" name="titre_achat" /><br />
+
+            <label for="montant_achat">Montant prévu pour cet achat :</label>
+            <input type="number" id="montant_achat" name="montant_achat" /><br />
+          </div>
+       </div>
+      <button id="ajouter">Ajouter</button><br><br>
+
+      <button id="submit">Créer la ligne</button>
+
+      <button id="valider_affaire">Valider l'Affaire</button>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>

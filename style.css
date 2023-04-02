@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .montant_total{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+
+  .select{
+    display: flex;
+    flex-direction: row;
+  }
+  .type_depense_class{
+    flex: 1 1 auto;
+  }
+  .champs_main_d_oeuvre_class{
+    flex: 3 1 auto;
+  }
+  .champs_materiel_class{
+    flex: 3 1 auto;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  select,
+  input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  select {
+    width: 50%;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
